@@ -23,8 +23,8 @@ pipeline{
 
         stage('Test'){
             steps{
-                sh 'dotnet restore src/WebApp/WebApp.csproj'
-                sh 'dotnet test src/WebApp.sln'
+                sh 'dotnet restore src/WebAppTests/WebAppTests.csproj'
+                sh 'dotnet test src/WebAppTests'
             }
         }
 
