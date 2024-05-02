@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Technologies Used</p>
+    @* <a href='../TechStack/Docker.cshtml'>Docker</a>
+    <a href='../TechStack/Jenkins.cshtml'>Jenkins</a> *@
+
+    <a asp-controller="TechStack" asp-action="Docker">Docker</a>
+    <a asp-controller="TechStack" asp-action="Jenkins">Jenkins</a>
+
+
+</div>
