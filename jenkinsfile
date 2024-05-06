@@ -48,14 +48,14 @@ pipeline{
             }
         }
 
-        stage('Run Container') {
-            steps {
-                script {
-                    sh 'docker rm -f webapp || true'
-                    sh "docker run -d --name webapp -p 8000:80 ${IMAGE_NAME}:${IMAGE_TAG}"
-                }
-            }
-        }
+        // stage('Run Container') {
+        //     steps {
+        //         script {
+        //             sh 'docker rm -f webapp || true'
+        //             sh "docker run -d --name webapp -p 8000:80 ${IMAGE_NAME}:${IMAGE_TAG}"
+        //         }
+        //     }
+        // }
 
     }
 }
