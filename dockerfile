@@ -2,6 +2,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:7.0-alpine
 
 WORKDIR /src
 
-COPY /src .
+COPY /src/WebApp/bin/Release/net7.0/publish .
 
-ENTRYPOINT ["dotnet", "WebApp/bin/Release/net7.0/publish/WebApp.dll"]
+ENTRYPOINT ["dotnet", "WebApp.dll"]
