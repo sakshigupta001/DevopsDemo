@@ -4,4 +4,4 @@ WORKDIR /src
 
 COPY /src .
 
-ENTRYPOINT ["dotnet", "WebApp/bin/Release/net7.0/WebApp.dll"]
+ENTRYPOINT ["dotnet", "WebApp/bin/Release/net7.0/publish/WebApp.dll"]
