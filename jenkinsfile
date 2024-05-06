@@ -17,7 +17,7 @@ pipeline{
         stage('Build'){
             steps{
                 sh 'dotnet restore src/WebApp/WebApp.csproj'
-                sh 'dotnet build src/WebApp/WebApp.csproj --configuration Release'
+                sh 'dotnet publish src/WebApp/WebApp.csproj --configuration Release'
             }
         }
 
